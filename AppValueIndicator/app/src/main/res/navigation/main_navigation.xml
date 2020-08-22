@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeListFragment">
+
+    <fragment
+        android:id="@+id/homeListFragment"
+        android:name="com.example.appvalueindicator.ui.HomeListFragment"
+        android:label="Lista Indicadores"
+        tools:layout="@layout/fragment_home_list">
+        <action
+            android:id="@+id/action_homeListFragment_to_detailIndicatorFragment"
+            app:destination="@id/detailIndicatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailIndicatorFragment"
+        android:name="com.example.appvalueindicator.ui.DetailIndicatorFragment"
+        android:label="Detalle Indicador"
+        tools:layout="@layout/fragment_detail_indicator" />
+</navigation>
